@@ -7,32 +7,29 @@
 	objects = {
 
 /* Begin PBXContainerItemProxy section */
-		3B828B4B2D09AF6C004A0908 /* PBXContainerItemProxy */ = {
+		3BB823532D2BAF5E00DA70F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3B828B322D09AF67004A0908 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3B828B392D09AF67004A0908;
-			remoteInfo = DogFacts;
-		};
-		3B828B552D09AF6C004A0908 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3B828B322D09AF67004A0908 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3B828B392D09AF67004A0908;
-			remoteInfo = DogFacts;
+			remoteInfo = DisneyCharacters;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3B828B3A2D09AF67004A0908 /* DisneyCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DisneyCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B828B4A2D09AF6C004A0908 /* DisneyCharactersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisneyCharactersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B828B542D09AF6C004A0908 /* DisneyCharactersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisneyCharactersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB8234F2D2BAF5E00DA70F5 /* DisneyCharactersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DisneyCharactersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3B828B3C2D09AF67004A0908 /* DisneyCharacters */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = DisneyCharacters;
+			sourceTree = "<group>";
+		};
+		3BB823502D2BAF5E00DA70F5 /* DisneyCharactersTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DisneyCharactersTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,14 +42,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B828B472D09AF6C004A0908 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B828B512D09AF6C004A0908 /* Frameworks */ = {
+		3BB8234C2D2BAF5E00DA70F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				3B828B3C2D09AF67004A0908 /* DisneyCharacters */,
+				3BB823502D2BAF5E00DA70F5 /* DisneyCharactersTests */,
 				3B828B3B2D09AF67004A0908 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,8 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				3B828B3A2D09AF67004A0908 /* DisneyCharacters.app */,
-				3B828B4A2D09AF6C004A0908 /* DisneyCharactersTests.xctest */,
-				3B828B542D09AF6C004A0908 /* DisneyCharactersUITests.xctest */,
+				3BB8234F2D2BAF5E00DA70F5 /* DisneyCharactersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,45 +95,28 @@
 			productReference = 3B828B3A2D09AF67004A0908 /* DisneyCharacters.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3B828B492D09AF6C004A0908 /* DisneyCharactersTests */ = {
+		3BB8234E2D2BAF5E00DA70F5 /* DisneyCharactersTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B828B612D09AF6C004A0908 /* Build configuration list for PBXNativeTarget "DisneyCharactersTests" */;
+			buildConfigurationList = 3BB823552D2BAF5E00DA70F5 /* Build configuration list for PBXNativeTarget "DisneyCharactersTests" */;
 			buildPhases = (
-				3B828B462D09AF6C004A0908 /* Sources */,
-				3B828B472D09AF6C004A0908 /* Frameworks */,
-				3B828B482D09AF6C004A0908 /* Resources */,
+				3BB8234B2D2BAF5E00DA70F5 /* Sources */,
+				3BB8234C2D2BAF5E00DA70F5 /* Frameworks */,
+				3BB8234D2D2BAF5E00DA70F5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3B828B4C2D09AF6C004A0908 /* PBXTargetDependency */,
+				3BB823542D2BAF5E00DA70F5 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3BB823502D2BAF5E00DA70F5 /* DisneyCharactersTests */,
 			);
 			name = DisneyCharactersTests;
 			packageProductDependencies = (
 			);
-			productName = DogFactsTests;
-			productReference = 3B828B4A2D09AF6C004A0908 /* DisneyCharactersTests.xctest */;
+			productName = DisneyCharactersTests;
+			productReference = 3BB8234F2D2BAF5E00DA70F5 /* DisneyCharactersTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		3B828B532D09AF6C004A0908 /* DisneyCharactersUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3B828B642D09AF6C004A0908 /* Build configuration list for PBXNativeTarget "DisneyCharactersUITests" */;
-			buildPhases = (
-				3B828B502D09AF6C004A0908 /* Sources */,
-				3B828B512D09AF6C004A0908 /* Frameworks */,
-				3B828B522D09AF6C004A0908 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3B828B562D09AF6C004A0908 /* PBXTargetDependency */,
-			);
-			name = DisneyCharactersUITests;
-			packageProductDependencies = (
-			);
-			productName = DogFactsUITests;
-			productReference = 3B828B542D09AF6C004A0908 /* DisneyCharactersUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -158,11 +131,7 @@
 					3B828B392D09AF67004A0908 = {
 						CreatedOnToolsVersion = 16.1;
 					};
-					3B828B492D09AF6C004A0908 = {
-						CreatedOnToolsVersion = 16.1;
-						TestTargetID = 3B828B392D09AF67004A0908;
-					};
-					3B828B532D09AF6C004A0908 = {
+					3BB8234E2D2BAF5E00DA70F5 = {
 						CreatedOnToolsVersion = 16.1;
 						TestTargetID = 3B828B392D09AF67004A0908;
 					};
@@ -183,8 +152,7 @@
 			projectRoot = "";
 			targets = (
 				3B828B392D09AF67004A0908 /* DisneyCharacters */,
-				3B828B492D09AF6C004A0908 /* DisneyCharactersTests */,
-				3B828B532D09AF6C004A0908 /* DisneyCharactersUITests */,
+				3BB8234E2D2BAF5E00DA70F5 /* DisneyCharactersTests */,
 			);
 		};
 /* End PBXProject section */
@@ -197,14 +165,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B828B482D09AF6C004A0908 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B828B522D09AF6C004A0908 /* Resources */ = {
+		3BB8234D2D2BAF5E00DA70F5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -221,14 +182,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3B828B462D09AF6C004A0908 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3B828B502D09AF6C004A0908 /* Sources */ = {
+		3BB8234B2D2BAF5E00DA70F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,15 +192,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3B828B4C2D09AF6C004A0908 /* PBXTargetDependency */ = {
+		3BB823542D2BAF5E00DA70F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 3B828B392D09AF67004A0908 /* DisneyCharacters */;
-			targetProxy = 3B828B4B2D09AF6C004A0908 /* PBXContainerItemProxy */;
-		};
-		3B828B562D09AF6C004A0908 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3B828B392D09AF67004A0908 /* DisneyCharacters */;
-			targetProxy = 3B828B552D09AF6C004A0908 /* PBXContainerItemProxy */;
+			targetProxy = 3BB823532D2BAF5E00DA70F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -378,6 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DisneyCharacters/Preview Content\"";
+				DEVELOPMENT_TEAM = 2NC27TTKA2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "\"Ok\"";
@@ -406,6 +356,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DisneyCharacters/Preview Content\"";
+				DEVELOPMENT_TEAM = 2NC27TTKA2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "\"Ok\"";
@@ -426,16 +377,16 @@
 			};
 			name = Release;
 		};
-		3B828B622D09AF6C004A0908 /* Debug */ = {
+		3BB823562D2BAF5E00DA70F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2NC27TTKA2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.amit.DogFactsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.amit.DisneyCharactersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
@@ -444,53 +395,21 @@
 			};
 			name = Debug;
 		};
-		3B828B632D09AF6C004A0908 /* Release */ = {
+		3BB823572D2BAF5E00DA70F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2NC27TTKA2;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.amit.DogFactsTests;
+				PRODUCT_BUNDLE_IDENTIFIER = org.amit.DisneyCharactersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DisneyCharacters.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DisneyCharacters";
-			};
-			name = Release;
-		};
-		3B828B652D09AF6C004A0908 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.amit.DogFactsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DogFacts;
-			};
-			name = Debug;
-		};
-		3B828B662D09AF6C004A0908 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.amit.DogFactsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = DogFacts;
 			};
 			name = Release;
 		};
@@ -515,20 +434,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B828B612D09AF6C004A0908 /* Build configuration list for PBXNativeTarget "DisneyCharactersTests" */ = {
+		3BB823552D2BAF5E00DA70F5 /* Build configuration list for PBXNativeTarget "DisneyCharactersTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3B828B622D09AF6C004A0908 /* Debug */,
-				3B828B632D09AF6C004A0908 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3B828B642D09AF6C004A0908 /* Build configuration list for PBXNativeTarget "DisneyCharactersUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3B828B652D09AF6C004A0908 /* Debug */,
-				3B828B662D09AF6C004A0908 /* Release */,
+				3BB823562D2BAF5E00DA70F5 /* Debug */,
+				3BB823572D2BAF5E00DA70F5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -5,6 +5,7 @@
 //  Created by Amit Gupta on 14/12/24.
 //
 import Foundation
+import Combine
 /*
  Enumaration defined for capturing Network errors
  */
@@ -20,18 +21,23 @@ final class HttpUtility {
     static let shared = HttpUtility()
     private init(){}
     
-    func getData(url: URL, completionHandler:@escaping(Result<Data, NetworkError>)-> Void){
-        
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            if error != nil {
-                completionHandler(.failure(.serverError))
-                return
-            }
-            guard let responseData = data else {
-                completionHandler(.failure(.serverError))
-                return
-            }
-            completionHandler(.success(responseData))
-        }.resume()
-    }
+    private var cancellables = Set<AnyCancellable>()
+    func getData(url: URL, completionHandler:@escaping(Result<DisneyResponse, NetworkError>)-> Void) {
+            URLSession.shared.dataTaskPublisher(for: url)
+                .map { $0.data }
+                .decode(type: DisneyResponse.self, decoder: JSONDecoder())
+                .receive(on: DispatchQueue.main)
+                .sink(receiveCompletion: { completion in
+                    switch completion {
+                    case .failure(let error):
+                        print(error)
+                        completionHandler(.failure(.serverError))
+                    case .finished:
+                        break
+                    }
+                }, receiveValue: { users in
+                    completionHandler(.success(users))
+                })
+                .store(in: &cancellables)
+        }
 }

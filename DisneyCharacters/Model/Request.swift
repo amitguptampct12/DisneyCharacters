@@ -5,7 +5,6 @@
 //  Created by Amit Gupta on 14/12/24.
 //
 import Foundation
+import SwiftUI
 /* As currently this is GET API we are not utilizing Request object as of now.*/
-struct Request : Encodable {
-    
-}
+struct Request {}
